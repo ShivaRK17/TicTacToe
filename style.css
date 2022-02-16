@@ -84,7 +84,7 @@ img{
     justify-content: center;
     align-items: center;
     font-size: 5em;
-    background:url('/minions.jpg') no-repeat;
+    background:url('minions.jpg') no-repeat;
     left: 25vw;
     border: 3px dashed red;
     border-radius: 10px;
@@ -121,7 +121,7 @@ footer button:active{
     bottom: 20vh;
     text-align: center;
     /* background: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); */
-    background: url('/start.jpeg');
+    background: url('start.jpeg');
     left: 25vw;
     border: 3px dashed palevioletred;
     border-radius: 10px;
