@@ -122,6 +122,7 @@ reset.addEventListener('click',()=>{
     Array.from(boxtext).forEach(Element =>{
         Element.innerText=""; 
         document.querySelector('.won').style.visibility="hidden"
+        count=0;
         changeturn();
         document.getElementsByClassName('turn')[0].innerText="Turn for " + turn;
         gameover = false
