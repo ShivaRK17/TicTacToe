@@ -52,7 +52,7 @@ const checkwin=()=>{
             count=0
             document.querySelector('.turn').innerText = boxtext[e[0]].innerText + " Won";
             document.querySelector('.won').style.visibility="visible"
-            document.querySelector('.won').style.background="url('/minions.jpg')"
+            document.querySelector('.won').style.background="url('minions.jpg')"
             document.querySelector('.won').innerText = boxtext[e[0]].innerText + " Won!\n";
             let boxtexts = document.querySelectorAll('.boxtext');
             Array.from(boxtexts).forEach(Element =>{
@@ -105,7 +105,7 @@ if (count===9) {
     gameover=true
     document.querySelector('.turn').innerText = "Draw!";
     document.querySelector('.won').style.visibility="visible"
-    document.querySelector('.won').style.background="url('/draw.jpeg')"
+    document.querySelector('.won').style.background="url('draw.jpeg')"
     document.querySelector('.won').innerText =" Draw!";
     let boxtexts = document.querySelectorAll('.boxtext');
     Array.from(boxtexts).forEach(Element =>{
