@@ -118,11 +118,11 @@ if (count===9) {
 reset = document.getElementById('reset')
 
 reset.addEventListener('click',()=>{
+    count=0;
     let boxtext = document.querySelectorAll('.boxtext');
     Array.from(boxtext).forEach(Element =>{
         Element.innerText=""; 
         document.querySelector('.won').style.visibility="hidden"
-        count=0;
         changeturn();
         document.getElementsByClassName('turn')[0].innerText="Turn for " + turn;
         gameover = false
