@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    color: white;
+    background-color: rgb(68, 98, 230);
+    display: flex;
+    align-items: center;
+    font-size:5vh;
+}
+ul{
+    list-style: none;
+    padding: 0 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+img{
+    height: 10vh;
+}
+.container{
+    /* background-color: wheat; */
+    margin-top: 10vh;
+    height: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.game{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+.box{
+    padding: 1px;
+    border: 1px solid red;
+    font-size: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color:rgb(249, 255, 191);
+    cursor: pointer;
+    border-radius: 2px;
+}
+.box:active{
+    background-color:rgb(235, 255, 147);
+}
+.info{
+    padding: 0 35px;
+    font-size: 4vh;
+    text-align: center;
+}
+.bt0{
+    border-top: none;
+}
+.bl0{
+    border-left: none;
+}
+.bb0{
+    border-bottom: none;
+}
+.br0{
+    border-right: none;
+}
+.won{
+    text-align: center;
+    width: 50vw;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+    height: 50vh;
+    position: absolute;
+    bottom: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    background:url('/minions.jpg') no-repeat;
+    left: 25vw;
+    border: 3px dashed red;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 1.2;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(10, 20, 82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer button{
+    background-color:rgb(255, 86, 100);
+    color: aqua;
+    width: 150px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+footer button:active{
+    background-color:crimson;
+}
+
+.start{
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    bottom: 20vh;
+    text-align: center;
+    /* background: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); */
+    background: url('/start.jpeg');
+    left: 25vw;
+    border: 3px dashed palevioletred;
+    border-radius: 10px;
+    visibility: visible;
+}
+.headin{
+    padding: 50px 0;
+}
+.btn{
+    margin:50px 0;
+}
+#play{
+    padding: 15px;
+    background-color: crimson;
+    color: yellow;
+    border: 1px double orange;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width:600px){
+    .won{
+        width: 98vw;
+        left: 1vw;
+        font-size: 2rem;
+        background-size: contain;
+    }
+    .start{
+        width: 98vw;
+        left: 1vw;
+    }
+    .game{
+        grid-template-columns: repeat(3,15vw);
+        grid-template-rows: repeat(3,15vw);
+    }
+    ul{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:440px){
+    .box{
+        font-size: 2vh;
+    }
+    ul{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }
+}
